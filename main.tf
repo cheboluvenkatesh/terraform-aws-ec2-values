@@ -3,7 +3,7 @@ provider "aws"{
 }
 module "ec2-sample" {
   source  = "app.terraform.io/VenkateshChebolu/ec2-sample/aws"
-  version = "1.0.1"
+  version = "1.0.2"
   # insert required variables here
   ami = "ami-0b5eea76982371e91"
   instance_type="t2.micro"
