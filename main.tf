@@ -1,5 +1,5 @@
 provider "aws"{
-    region="us-east-1"
+    region="us-west-2"
 }
 module "ec2-sample" {
   source  = "app.terraform.io/VenkateshChebolu/ec2-sample/aws"
@@ -8,6 +8,6 @@ module "ec2-sample" {
   ami = "ami-0b5eea76982371e91"
   instance_type="t2.micro"
   key_name="mykey"
-  security_group_ids=["sg-08077ef0bf51076a8"]
-  subnet_id="subnet-0cc7a4d57319ab7c9"
+  security_group_ids=["sg-07a64ef10bebc3fec"]
+  subnet_id="subnet-0be4fdad59e280db5"
 }
